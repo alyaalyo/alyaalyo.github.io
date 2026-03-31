@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Highest-Grossing Films of All Time</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- ── Header ─────────────────────────────────────────────────────────── -->
+  <header>
+    <h1>🎬 <span>Highest-Grossing Films</span> of All Time</h1>
+    <p>Data sourced from Wikipedia · Parsed with Python · Stored in SQLite</p>
+  </header>
+
+  <!-- ── Stats Bar ──────────────────────────────────────────────────────── -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-value" id="stat-total">—</div>
+      <div class="stat-label">Films Listed</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value" id="stat-top-gross" style="font-size:1.1rem">—</div>
+      <div class="stat-label">Highest Gross (#1)</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value" id="stat-top-year">—</div>
+      <div class="stat-label">Most Productive Decade</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value" id="stat-countries">—</div>
+      <div class="stat-label">Countries Represented</div>
+    </div>
+  </div>
+
+  <!-- ── Main Content ───────────────────────────────────────────────────── -->
+  <main>
+
+    <!-- Chart -->
+    <section class="chart-section">
+      <div class="section-title">Top 15 Films by Box Office Revenue</div>
+      <div class="chart-wrapper">
+        <canvas id="revenueChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Controls -->
+    <div class="controls">
+      <!-- Search -->
+      <div class="search-box">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input id="search" type="text" placeholder="Search by title or director…" autocomplete="off" />
+      </div>
+
+      <!-- Filters + View Toggle -->
+      <div class="filters">
+        <!-- Country filter -->
+        <select id="filter-country">
+          <option value="">All Countries</option>
+        </select>
+
+        <!-- Year range -->
+        <div class="year-range">
+          <span>Year</span>
+          <input id="year-from" type="number" placeholder="From" />
+          <span>–</span>
+          <input id="year-to"   type="number" placeholder="To"   />
+        </div>
+
+        <!-- Grid / Table toggle -->
+        <div class="view-toggle">
+          <button id="btn-grid" class="btn-icon active" title="Grid view">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
+            </svg>
+          </button>
+          <button id="btn-table" class="btn-icon" title="Table view">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2">
+              <path d="M3 6h18M3 12h18M3 18h18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result count -->
+    <div class="result-info" id="result-info">Loading…</div>
+
+    <!-- Films output -->
+    <div id="films-container" class="grid">
+      <div class="empty-state">
+        <p>Loading data…</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────────────────── -->
+  <footer>
+    Data extracted from
+    <a href="https://en.wikipedia.org/wiki/List_of_highest-grossing_films"
+       target="_blank" rel="noopener">Wikipedia — List of highest-grossing films</a>.
+    Built for the Data Wrangling and Visualization course.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
