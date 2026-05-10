@@ -85,8 +85,8 @@
     "title": "Zootopia 2†",
     "release_year": 2025,
     "director": "Jared Bush, Byron Howard",
-    "box_office": "$1,866,641,191",
-    "box_office_usd": 1866641191.0,
+    "box_office": "$1,866,647,950",
+    "box_office_usd": 1866647950.0,
     "country": "United States"
   },
   {
@@ -137,7 +137,7 @@
     "director": "James Wan",
     "box_office": "$1,515,341,399",
     "box_office_usd": 1515341399.0,
-    "country": "United States"
+    "country": "China, United States"
   },
   {
     "id": 15,
@@ -155,8 +155,8 @@
     "title": "Avatar: Fire and Ash†",
     "release_year": 2025,
     "director": "James Cameron",
-    "box_office": "$1,485,829,566",
-    "box_office_usd": 1485829566.0,
+    "box_office": "$1,485,999,890",
+    "box_office_usd": 1485999890.0,
     "country": "United States"
   },
   {
@@ -195,8 +195,8 @@
     "title": "The Super Mario Bros. Movie",
     "release_year": 2023,
     "director": "Aaron Horvath, Michael Jelenic",
-    "box_office": "$1,360,879,735",
-    "box_office_usd": 1360879735.0,
+    "box_office": "$1,360,783,214",
+    "box_office_usd": 1360783214.0,
     "country": "United States"
   },
   {
@@ -254,10 +254,10 @@
     "rank": "26",
     "title": "Frozen",
     "release_year": 2013,
-    "director": "N/A",
+    "director": "Chris Buck, Jennifer Lee",
     "box_office": "F$1,290,000,000",
     "box_office_usd": 1290000000.0,
-    "country": "N/A"
+    "country": "United States"
   },
   {
     "id": 27,
@@ -454,10 +454,10 @@
     "rank": "46",
     "title": "Moana 2",
     "release_year": 2024,
-    "director": "N/A",
+    "director": "David Derrick Jr., Jason Hand, Dana Ledoux Miller",
     "box_office": "$1,059,242,164",
     "box_office_usd": 1059242164.0,
-    "country": "N/A"
+    "country": "United States"
   },
   {
     "id": 47,
@@ -474,10 +474,10 @@
     "rank": "48",
     "title": "Aladdin",
     "release_year": 2019,
-    "director": "N/A",
+    "director": "Guy Ritchie",
     "box_office": "$1,050,693,953",
     "box_office_usd": 1050693953.0,
-    "country": "N/A"
+    "country": "United States"
   },
   {
     "id": 49,
